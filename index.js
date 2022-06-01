@@ -25,10 +25,11 @@ app.get("/getMemes",async (req,res)=>{
         var data = []
 
         for(var i=0;i<topPosts.length;i++){
-            data.push({
-                title:topPosts[i].title,
-                url:topPosts[i].url
-            })
+            // data.push({
+            //     title:topPosts[i].title,
+            //     url:topPosts[i].url
+            // })
+            data.push(topPosts[i].url)
         }
 
         res.status(200).json(data)
