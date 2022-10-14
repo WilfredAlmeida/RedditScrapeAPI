@@ -25,10 +25,6 @@ app.get("/getMemes",async (req,res)=>{
         var data = []
 
         for(var i=0;i<topPosts.length;i++){
-            // data.push({
-            //     title:topPosts[i].title,
-            //     url:topPosts[i].url
-            // })
             data.push(topPosts[i].url)
         }
 
@@ -46,7 +42,7 @@ app.listen(port,()=>{
 })
 
 /*
-
+This is the response returned
 [
 	{
 		"allow_live_comments": false,
